@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    background-color: var(--Bg-color);
+
+}
+:root{
+    --Bg-color:#DBEAFE;
+    --btn-color:#BFDBFE;
+}
+.IP-field {
+
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    display: block;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.OP-field {
+    width: 90%;
+    border: 1px solid black;
+    height: 10vh;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: block;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+.btn-translate{
+    width: 100px;
+    display: block;
+    margin:auto;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    text-align: center;
+    background-color:var(--btn-color) ;
+}
+.Header-img{
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+.Header-Heading{
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: var(--dark-grey);
+    text-align: center;
+}
+.OPDiv{
+    font-size: 30px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
