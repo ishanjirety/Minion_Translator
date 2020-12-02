@@ -2,14 +2,17 @@ var btnTranslate = document.querySelector('#btn-translate');
 var inputField = document.querySelector('#textIP');
 var OutputField = document.querySelector('#textOP');
 
-var Url = "https://api.funtranslations.com/translate/yoda.json"
+var Url = "https://api.funtranslations.com/translate/minion.json"
 
 btnTranslate.addEventListener('mouseenter',()=>{
-  btnTranslate.style.backgroundColor = "#60A5FA";
+  btnTranslate.style.backgroundColor = "#FBBF24";
 })
 btnTranslate.addEventListener('mouseleave',()=>{
-    btnTranslate.style.backgroundColor = "#DBEAFE";
+    btnTranslate.style.backgroundColor = "#FCD34D";
   })
+  inputField.addEventListener("change", ()=>{
+      OutputField.innerText="";
+  });
   
 btnTranslate.addEventListener('click',function ClickEventHandler(){
     if(inputField.value.length < 1){
@@ -25,11 +28,11 @@ btnTranslate.addEventListener('click',function ClickEventHandler(){
     .then(json => InputInDiv(json))
     .catch(handelError)
     }
-})
+});
 function InputInDiv(json){
-    console.log(json)
     OutputField.innerText=json.contents.translated;
 }
 function handelError(){
-    console.log("Limit reached! You can translate 5 time in hour")
+    console.log("Limit reached!🥺 You can translate 5 times in an hour")
+    OutputField.innerText="Limit Reached!😓 Have Banana🍌 Insted"
 }
