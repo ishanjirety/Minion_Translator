@@ -30,9 +30,9 @@ btnTranslate.addEventListener('click',function ClickEventHandler(){
     }
 });
 function InputInDiv(json){
+    console.log(json);
     OutputField.innerText=json.contents.translated;
 }
 function handelError(){
-    console.log("Limit reached!🥺 You can translate 5 times in an hour")
     OutputField.innerText="Limit Reached!😓 Have Banana🍌 Insted"
 }
