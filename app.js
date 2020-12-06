@@ -30,7 +30,7 @@ btnTranslate.addEventListener('click',function ClickEventHandler(){
     }
 });
 function InputInDiv(json){
-    OutputField.innerText=json.contents.translation;
+    OutputField.innerText=json.contents.translated;
 }
 function handelError(){
     OutputField.innerText="Limit Reached!😓 Have Banana🍌 Insted"
