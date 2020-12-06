@@ -30,7 +30,10 @@ btnTranslate.addEventListener('click',function ClickEventHandler(){
     }
 });
 function InputInDiv(json){
+<<<<<<< HEAD
     console.log(json);
+=======
+>>>>>>> b35d1f93e7bc1430900fdfc9d4269b50f8d6c6b8
     OutputField.innerText=json.contents.translation;
 }
 function handelError(){
